@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa'
-import { Link, link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const Navbar = ({ title }) => {
@@ -16,7 +16,7 @@ const Navbar = ({ title }) => {
           <Link to='/'className='btn btn-ghost btn-sm rounded-brn'>
             Home
           </Link>
-          <Link to='/about'className='btn btn-ghost btn-sm rounded-brn'>
+          <Link to='/'className='btn btn-ghost btn-sm rounded-brn'>
             About
           </Link>
         </div>
@@ -36,3 +36,5 @@ Navbar.propTypes = {
 export default Navbar;
 
 
+
+ 
