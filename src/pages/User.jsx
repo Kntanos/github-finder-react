@@ -1,15 +1,18 @@
 import { useEffect, useContext } from "react";
 import GithubContext from "../context/github/GithubContext";
+import { useParams } from "react-router-dom";
 
-const User = ({ match }) => {
+const User = () => {
   const {getUser, user} = useContext(GithubContext)
 
+const params = useParams();
+
   useEffect(() => {
-    getUser(match.params.login)
+    getUser(params.login)
   }, [])
 
   return <div>
-    
+    USER
   </div>;
 };
 
