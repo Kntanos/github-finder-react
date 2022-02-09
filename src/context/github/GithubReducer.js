@@ -6,7 +6,7 @@ const githubReducer = (state, action) => {
         users: action.payload,
         loading: false
       }
-    case 'GET-USER':
+    case 'GET_USER':
       return {
         ...state,
         user: action.payload,
